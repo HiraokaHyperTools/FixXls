@@ -93,7 +93,7 @@ namespace FixXls {
                                 if (!csF.TryGetValue(iSrc, out font2)) {
                                     font2 = wb2.CreateFont();
                                     var font = cell.CellStyle.GetFont(wb);
-                                    font2.Boldweight = font.Boldweight;
+                                    font2.IsBold = font.IsBold;
                                     font2.Charset = font.Charset;
                                     font2.Color = font.Color;
                                     font2.FontHeight = font.FontHeight;
